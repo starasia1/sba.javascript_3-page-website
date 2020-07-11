@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Main Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Skills Based Assessment " content="">
+<meta name="Asia Armand" content="">
+<link href="./css/style.css" rel="stylesheet">
+<script type="text/javascript" src="./js/header-functions.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://www.pexels.com/search/classic%20car/">
+</head>
+<style>
+
+    .item1 { 
+      grid-area: header; 
+       background-color: #6377A9;
+      text-decoration: underline;
+        color: 0D1C42;
+        font-family: "Lucida Console", Courier, monospace;
+        font-weight: bold;
+        font-size: 40px;
+     
+    }
+    
+    
+    .item2 { 
+      grid-area: menu; 
+        background-color: #ededeb;
+    
+      }
+    .item3 {
+      grid-area: main; 
+         background-color: green;
+       
+       }
+    .item4 { 
+      grid-area: right; 
+      width: 900px;    	
+        background-color: #f1f1c1;    
+       }
+    .item5 { 
+      grid-area: footer;
+        background-color: black;
+        color: white;
+        font-size: 11px;
+         text-align:center;
+      padding:6px;
+      bottom:0;
+        }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 150px 250px 10px;
+        grid-template-rows: 70px auto auto auto;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+      grid-gap: 0px;
+      background-color: black;
+      padding: 5px;
+    
+    }
+    
+    .grid-container > div {
+     
+      text-align: Center;
+      padding: 2px 0;
+    }
+    
+    
+    
+    
+    
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 7px;
+      text-align: left;
+    }
+    
+    tr:nth-child(even) {
+        background-color:   #ededeb;
+    }
+    
+    
+    #t01 {
+      width: 100%;    
+      background-color: #f1f1c1;
+      
+    
+    }
+    
+    #t02 { 
+      background-color: black;
+      display:block; 
+      width:"100%"; 
+      height:"100%";
+    
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 175px;
+      height: 175px;
+    }
+    
+    </style>
+    </head>
+    <body>
+    
+    <!--Use a grid continer to layout screen: Header, LeftBar, Main, RightBar, Footer--->
+    <div class="grid-container">
+    
+    <!--Start: Left Menu Bar--->
+      <div class="item1">CLASSIC TRUCKS</div>
+      <div class="item2">
+      <ul><br>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Car News</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+      </div>
+    
+    <!--End: Left Menu Bar--->
+      
+      
+    <!--Start: Display Car pic Here-->
+      <div class="item3">
+      <table id="t02">
+                        <tr>
+                         <td><img src="https://images.unsplash.com/photo-1508171997656-fdf7cf6c4df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=10"  ></td>
+                         <td><img src="https://images.unsplash.com/photo-1508171997656-fdf7cf6c4df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=10"  ></td>
+              </tr>
+                        <tr>
+                          <td><img src="https://images.unsplash.com/photo-1508171997656-fdf7cf6c4df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=10" ></td>
+                            <td><img src="https://images.unsplash.com/photo-1508171997656-fdf7cf6c4df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=10" ></td>
+                           </tr>
+          </table>
+    
+      <BR>
+    <!--End: Display Car pics Here-->
+    
+    <!--Start: Display Car Specification Here-->
+      <table id="t01">
+      <tr>
+        <th>Vehicle Details</th>
+        <th>Results</th> 
+      </tr>
+      <tr>
+        <td>Listing ID:</td>
+        <td>CC-1329383</td>
+      </tr>
+      <tr>
+        <td>Price:</td>
+        <td>$42,500 (OBO)</td>
+      </tr>
+      <tr>
+        <td>Location:</td>
+        <td>Prosper, Texas</td>
+      </tr>
+        <tr>
+        <td>Year:</td>
+        <td>1970</td>
+      </tr>
+        <tr>
+        <td>Make:</td>
+        <td>Dodge</td>
+      </tr>
+       <tr>
+        <td>Model:</td>
+        <td>Challenger </td>
+      </tr>
+        <tr>
+        <td>Exterior Color:</td>
+        <td>Panther Pink</td>
+      </tr>
+        <tr>
+        <td>Interia Color:</td>
+        <td>Black</td>
+      </tr>
+          <tr>
+        <td>Transmission:</td>
+        <td>Automatic</td>
+      </tr>
+            <tr>
+        <td>Odometer:</td>
+        <td>4880</td>
+      </tr>
+    </table>
+      
+      </div>  
+    <!--End: Display Car Specification Here-->
+      
+    
+      
+    <!--Start: Right menu bar here -->  
+      <div class="item4">
+              <Div id="rightBar"> 
+                <h>Contact Us</h>
+                <form action="mailto:buildingitup@yahoo.com" method="post" enctype="text/plain">
+                  Name:<br>
+                  <input type="text" name="name"><br>
+                  E-mail:<br>
+                  <input type="text" name="mail"><br>
+                  Comment:<br>
+                  <input type="text" name="comment"><br><br>
+                  <input type="submit" value="Send">
+                  <input type="reset" value="Reset">
+                  </form>
+              
+          </DIV>
+            
+      </div>
+    <!--End: Right menu bar here -->  
+    
+    <!--Start: footer disclaimer here -->  
+      <div class="item5">
+     <p> © 2020 The Collector Car Network, Inc All rights reserved. "Drive your America Dream" is a registered trademark. The Collector Car Network, Inc. All other trademarks are the property of their respective owners.</P>
+      </div>
+    <!--End: disclaimer here -->    
+      
+    </div>
+    <!--End: Grid Class here -->   
+    </body>
+    </html>

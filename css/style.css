@@ -1,9 +1,177 @@
+/* background image for main page */
 body {
-    background-color: navy;
+    background-image: url('https://cdn.pixabay.com/photo/2015/03/26/10/11/classic-691043_1280.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+ 
+/* drop button for main page */
+  .dropdown {
+    position: center;
+    display: inline-block;
+    width: 100%;
+    left: 500px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dropbtn {
+    background-color: #dee7de;
+    color:rgba(0,0,0,0.5);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .signinfo{
+    float: right;
+    padding:10px;
+    border-radius: 12px;
+  }
+  /* sign in & sign up button on main page */
+  .signbtn{
+      color: black;
+      padding: 14px 40px;
+      font-family: Cambria;
+  }
+  
+
+
+/* Add padding to containers */
+    .box {
+    padding: 16px;
+  }
+
+/* Full-width input fields */
+    input[type=text], input[type=password] {
+   width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+   border: none;
+   background: #f1f1f1;
+  }
+
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+/* Overwrite default styles of hr */
+    hr {
+   border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #948b8a;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 100%; 
 }
 
 
 object {
     height: 100vh;
     width: 100vh;
+}
+
+
+/* signup.html style sheet */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+}
+.sign-section{
+  background: url(https://cdn.pixabay.com/photo/2016/04/13/21/58/auto-1327801_1280.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.sign-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+.sign-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.sign-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(168, 23, 23);
+  transition: 0.5s;
+}
+.sign-form-text:hover{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+.sign-form-btn{
+  float: rught;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sign-form-btn:hover{
+  background: #2980b9;
 }
